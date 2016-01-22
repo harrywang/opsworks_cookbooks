@@ -1,0 +1,39 @@
+I, [2016-01-22T17:11:33.498219 #83728]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2016-01-22T17:11:33.498977 #83728]  INFO -- default-ubuntu-1204: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+E, [2016-01-22T17:11:34.243338 #83728] ERROR -- default-ubuntu-1204: Create failed on instance <default-ubuntu-1204>.
+E, [2016-01-22T17:11:34.243834 #83728] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2016-01-22T17:11:34.243874 #83728] ERROR -- default-ubuntu-1204: Class: Aws::EC2::Errors::UnsupportedOperation
+E, [2016-01-22T17:11:34.243888 #83728] ERROR -- default-ubuntu-1204: Message: AMI 'ami-e6f36fd6' with an instance-store root device is not supported for the instance type 't1.micro'.
+E, [2016-01-22T17:11:34.243902 #83728] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2016-01-22T17:11:34.243913 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.1.35/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2016-01-22T17:11:34.243931 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.1.35/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2016-01-22T17:11:34.243941 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.1.35/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2016-01-22T17:11:34.243954 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.1.35/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2016-01-22T17:11:34.243966 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-core-2.1.35/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2016-01-22T17:11:34.243987 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.1.35/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2016-01-22T17:11:34.244005 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.1.35/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2016-01-22T17:11:34.244018 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.1.35/lib/aws-sdk-resources/operations.rb:87:in `call'
+E, [2016-01-22T17:11:34.244043 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/aws-sdk-resources-2.1.35/lib/aws-sdk-resources/operation_methods.rb:19:in `block in add_operation'
+E, [2016-01-22T17:11:34.244060 #83728] ERROR -- default-ubuntu-1204: /Users/harrywang/.chefdk/gem/ruby/2.1.0/gems/kitchen-ec2-0.10.0/lib/kitchen/driver/aws/client.rb:82:in `create_instance'
+E, [2016-01-22T17:11:34.244071 #83728] ERROR -- default-ubuntu-1204: /Users/harrywang/.chefdk/gem/ruby/2.1.0/gems/kitchen-ec2-0.10.0/lib/kitchen/driver/ec2.rb:291:in `submit_server'
+E, [2016-01-22T17:11:34.244087 #83728] ERROR -- default-ubuntu-1204: /Users/harrywang/.chefdk/gem/ruby/2.1.0/gems/kitchen-ec2-0.10.0/lib/kitchen/driver/ec2.rb:192:in `create'
+E, [2016-01-22T17:11:34.244096 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:424:in `public_send'
+E, [2016-01-22T17:11:34.244108 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:424:in `block in perform_action'
+E, [2016-01-22T17:11:34.244117 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `call'
+E, [2016-01-22T17:11:34.244134 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2016-01-22T17:11:34.244143 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:453:in `block in action'
+E, [2016-01-22T17:11:34.244166 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-01-22T17:11:34.244178 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:452:in `action'
+E, [2016-01-22T17:11:34.244207 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:424:in `perform_action'
+E, [2016-01-22T17:11:34.244220 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:352:in `create_action'
+E, [2016-01-22T17:11:34.244231 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2016-01-22T17:11:34.244253 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `each'
+E, [2016-01-22T17:11:34.244276 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2016-01-22T17:11:34.244286 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-01-22T17:11:34.244295 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-01-22T17:11:34.244304 #83728] ERROR -- default-ubuntu-1204: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-01-22T17:11:34.244321 #83728] ERROR -- default-ubuntu-1204: ----------------------

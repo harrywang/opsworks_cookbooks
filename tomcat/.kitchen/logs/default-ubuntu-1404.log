@@ -1,0 +1,111 @@
+I, [2016-01-22T15:29:58.137477 #83544]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2016-01-22T15:29:59.600464 #83544]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-01-22T15:29:59.756015 #83544]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2016-01-22T15:30:09.228669 #83544]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-01-22T15:30:09.891854 #83544]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-tomcat-default-ubuntu-1404_default_1453494609850_1197
+I, [2016-01-22T15:30:10.293984 #83544]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2016-01-22T15:30:10.344805 #83544]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2016-01-22T15:30:10.345389 #83544]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2016-01-22T15:30:10.406554 #83544]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2016-01-22T15:30:10.494361 #83544]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-01-22T15:30:10.658279 #83544]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2016-01-22T15:30:11.251652 #83544]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2222
+I, [2016-01-22T15:30:11.251894 #83544]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2016-01-22T15:30:11.252146 #83544]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2016-01-22T15:30:26.918020 #83544]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-01-22T15:30:26.918101 #83544]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-01-22T15:30:26.918145 #83544]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2016-01-22T15:30:27.164994 #83544]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-01-22T15:30:27.165089 #83544]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2016-01-22T15:30:27.238964 #83544]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2016-01-22T15:30:27.288676 #83544]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-01-22T15:30:27.969383 #83544]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2016-01-22T15:30:27.969737 #83544]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2016-01-22T15:30:28.017953 #83544]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2016-01-22T15:30:30.970825 #83544]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-01-22T15:30:33.274757 #83544]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2016-01-22T15:30:33.275232 #83544]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2016-01-22T15:30:33.277128 #83544]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m35.14s).
+I, [2016-01-22T15:30:33.277572 #83544]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-01-22T15:30:33.279978 #83544]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-01-22T15:30:33.280181 #83544]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-01-22T15:30:33.281133 #83544]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2016-01-22T15:30:33.289140 #83544]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-01-22T15:30:33.291029 #83544]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-01-22T15:30:33.301308 #83544]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-01-22T15:30:33.301769 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:30:33.301819 #83544]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2016-01-22T15:30:33.466415 #83544]  INFO -- default-ubuntu-1404: Download complete.
+I, [2016-01-22T15:30:33.478503 #83544]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2016-01-22T15:30:33.478926 #83544]  INFO -- default-ubuntu-1404: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2016-01-22T15:30:33.479260 #83544]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1372/metadata.txt
+I, [2016-01-22T15:30:33.479747 #83544]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-01-22T15:30:33.922329 #83544]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.6.0-1_amd64.deb
+I, [2016-01-22T15:30:33.923071 #83544]  INFO -- default-ubuntu-1404: md5	5cfc19d5a036b3f7860716bc9795a85e
+I, [2016-01-22T15:30:33.923886 #83544]  INFO -- default-ubuntu-1404: sha256	e0b42748daf55b5dab815a8ace1de06385db98e29a27ca916cb44f375ef65453
+I, [2016-01-22T15:30:33.927652 #83544]  INFO -- default-ubuntu-1404: version	12.6.0downloaded metadata file looks valid...
+I, [2016-01-22T15:30:33.933369 #83544]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.6.0-1_amd64.deb
+I, [2016-01-22T15:30:33.933839 #83544]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1372/chef_12.6.0-1_amd64.deb
+I, [2016-01-22T15:30:33.934345 #83544]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-01-22T15:30:44.882224 #83544]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2016-01-22T15:30:45.089547 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:30:45.089893 #83544]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-01-22T15:30:45.090244 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:30:45.090547 #83544]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-01-22T15:30:45.090936 #83544]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-01-22T15:30:45.091359 #83544]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2016-01-22T15:30:45.091703 #83544]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-01-22T15:30:45.092000 #83544]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2016-01-22T15:30:45.092202 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:30:45.092524 #83544]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-01-22T15:30:45.092818 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:30:45.093177 #83544]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2016-01-22T15:30:45.093521 #83544]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2016-01-22T15:30:45.157922 #83544]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2016-01-22T15:30:45.332105 #83544]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33142 files and directories currently installed.)
+I, [2016-01-22T15:30:45.333583 #83544]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.6.0-1_amd64.deb ...
+I, [2016-01-22T15:30:45.347447 #83544]  INFO -- default-ubuntu-1404: Unpacking chef (12.6.0-1) ...
+I, [2016-01-22T15:30:50.258913 #83544]  INFO -- default-ubuntu-1404: Setting up chef (12.6.0-1) ...
+I, [2016-01-22T15:30:50.315770 #83544]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2016-01-22T15:30:50.374422 #83544]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-01-22T15:30:51.276858 #83544]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.6.0
+I, [2016-01-22T15:30:52.579184 #83544]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-01-22T15:30:52.584414 #83544]  INFO -- default-ubuntu-1404: [2016-01-22T20:30:50+00:00] WARN: Cloning resource attributes for service[tomcat] from prior resource (CHEF-3694)
+I, [2016-01-22T15:30:52.585176 #83544]  INFO -- default-ubuntu-1404: [2016-01-22T20:30:50+00:00] WARN: Previous service[tomcat]: /tmp/kitchen/cookbooks/tomcat/recipes/service.rb:1:in `from_file'
+I, [2016-01-22T15:30:52.585693 #83544]  INFO -- default-ubuntu-1404: [2016-01-22T20:30:50+00:00] WARN: Current  service[tomcat]: /tmp/kitchen/cookbooks/tomcat/recipes/default.rb:11:in `from_file'
+I, [2016-01-22T15:30:52.588339 #83544]  INFO -- default-ubuntu-1404: Converging 6 resources
+I, [2016-01-22T15:30:52.589170 #83544]  INFO -- default-ubuntu-1404: Recipe: tomcat::default
+I, [2016-01-22T15:31:00.717783 #83544]  INFO -- default-ubuntu-1404:   * execute[install_updates] action run
+I, [2016-01-22T15:31:00.717854 #83544]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2016-01-22T15:31:32.395662 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:31:32.395712 #83544]  INFO -- default-ubuntu-1404:     - install version 7.0.52-1ubuntu0.3 of package tomcat7
+I, [2016-01-22T15:31:32.395915 #83544]  INFO -- default-ubuntu-1404: Recipe: tomcat::service
+I, [2016-01-22T15:31:32.396714 #83544]  INFO -- default-ubuntu-1404:  (skipped due to action :nothing)
+I, [2016-01-22T15:31:32.397289 #83544]  INFO -- default-ubuntu-1404: Recipe: tomcat::default
+I, [2016-01-22T15:31:32.484663 #83544]  INFO -- default-ubuntu-1404:   * service[tomcat] action enable (up to date)
+I, [2016-01-22T15:31:32.490553 #83544]  INFO -- default-ubuntu-1404:   * directory[/srv/www/shared] action create
+I, [2016-01-22T15:31:32.493128 #83544]  INFO -- default-ubuntu-1404:     - create new directory /srv/www/shared
+I, [2016-01-22T15:31:32.493642 #83544]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-01-22T15:31:32.495805 #83544]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-01-22T15:31:32.531100 #83544]  INFO -- default-ubuntu-1404:   * template[/srv/www/shared/example_data.json] action create
+I, [2016-01-22T15:31:32.534425 #83544]  INFO -- default-ubuntu-1404:     - create new file /srv/www/shared/example_data.json
+I, [2016-01-22T15:31:32.535903 #83544]  INFO -- default-ubuntu-1404:     - update content in file /srv/www/shared/example_data.json from none to 3fc01b
+I, [2016-01-22T15:31:32.537035 #83544]  INFO -- default-ubuntu-1404:     --- /srv/www/shared/example_data.json	2016-01-22 20:31:30.498010728 +0000
+I, [2016-01-22T15:31:32.538290 #83544]  INFO -- default-ubuntu-1404:     +++ /srv/www/shared/.example_data.json20160122-1482-1tclodw	2016-01-22 20:31:30.498010728 +0000
+I, [2016-01-22T15:31:32.538336 #83544]  INFO -- default-ubuntu-1404:     @@ -1 +1,9 @@
+I, [2016-01-22T15:31:32.538352 #83544]  INFO -- default-ubuntu-1404:     +{
+I, [2016-01-22T15:31:32.538364 #83544]  INFO -- default-ubuntu-1404:     +  "my_name" : "Harry Wang",
+I, [2016-01-22T15:31:32.538375 #83544]  INFO -- default-ubuntu-1404:     +  "your_name" : "John Doe",
+I, [2016-01-22T15:31:32.538385 #83544]  INFO -- default-ubuntu-1404:     +  "a_number" : 42,
+I, [2016-01-22T15:31:32.538396 #83544]  INFO -- default-ubuntu-1404:     +  "a_boolean" : true,
+I, [2016-01-22T15:31:32.538407 #83544]  INFO -- default-ubuntu-1404:     +  "a_string" : "some string",
+I, [2016-01-22T15:31:32.538460 #83544]  INFO -- default-ubuntu-1404:     +  "platform" : "ubuntu"
+I, [2016-01-22T15:31:32.539215 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:31:32.540038 #83544]  INFO -- default-ubuntu-1404:     - change mode from '' to '0644'
+I, [2016-01-22T15:31:38.657677 #83544]  INFO -- default-ubuntu-1404:   * service[tomcat] action restart
+I, [2016-01-22T15:31:38.658350 #83544]  INFO -- default-ubuntu-1404:     - restart service service[tomcat]
+I, [2016-01-22T15:31:38.658938 #83544]  INFO -- default-ubuntu-1404: 
+I, [2016-01-22T15:31:38.659324 #83544]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-01-22T15:31:38.660045 #83544]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-01-22T15:31:38.660607 #83544]  INFO -- default-ubuntu-1404: Chef Client finished, 5/7 resources updated in 47 seconds
+I, [2016-01-22T15:31:38.767164 #83544]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (1m5.49s).

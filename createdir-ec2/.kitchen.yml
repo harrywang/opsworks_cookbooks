@@ -1,0 +1,29 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: hjwangoregon
+  region: us-west-2
+  availability_zone: a
+  instance_type: t2.micro
+  security_group_ids: ["sg-4317f327"]
+  subnet_id: subnet-4610d931
+
+transport:
+  ssh_key: ../../keys/hjwangoregon.pem
+  connection_timeout: 10
+  connection_retries: 5
+  username: ubuntu
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+      image_id: ami-9abea4fb
+
+suites:
+  - name: default
+    run_list:
+      - recipe[createdir-ec2::default]
+    attributes:

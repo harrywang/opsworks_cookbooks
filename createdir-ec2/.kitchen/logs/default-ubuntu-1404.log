@@ -1,0 +1,3 @@
+I, [2016-01-22T17:54:24.409017 #83822]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2016-01-22T17:54:25.410322 #83822]  INFO -- default-ubuntu-1404: EC2 instance <i-25c0d0fc> destroyed.
+I, [2016-01-22T17:54:25.412799 #83822]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m1.00s).
