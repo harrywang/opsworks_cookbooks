@@ -1,5 +1,5 @@
 # AWS Cookbooks 101
-This the code for AWS Cookbooks 101 tutorial at: http://docs.aws.amazon.com/opsworks/latest/userguide/cookbooks-101.html
+Code for AWS Cookbooks 101 tutorial at: http://docs.aws.amazon.com/opsworks/latest/userguide/cookbooks-101.html
 
 This is a great tutorial and very easy to follow.
 
